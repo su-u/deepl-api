@@ -1,7 +1,14 @@
 {
   "name": "deepl-api",
   "version": "1.0.0",
-  "main": "index.ts",
+  "main": "src/index.ts",
   "author": "su- <su-.dev@unitech.jp>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^3.9.5"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "query-string": "^6.13.1"
+  }
 }
