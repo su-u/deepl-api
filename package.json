@@ -1,0 +1,7 @@
+{
+  "name": "deepl-api",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "author": "su- <su-.dev@unitech.jp>",
+  "license": "MIT"
+}
