@@ -1,5 +1,6 @@
 import axios from 'axios';
 import { stringify } from 'query-string';
+import preventExtensions = Reflect.preventExtensions;
 
 type LangDict =
   | 'DE'
@@ -35,3 +36,5 @@ export const translate = (parameters: DeeplParameters) => {
     stringify(parameters)
   );
 };
+
+export default translate;
