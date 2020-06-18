@@ -20,6 +20,11 @@ interface DeeplOptionalParameters {
   source_lang: LangDict;
   preserve_formatting: '0' | '1';
   formality: '0' | '1';
+  tag_handling: 'xml';
+  non_splitting_tags: string;
+  outline_detection: string;
+  splitting_tags: string;
+  ignore_tags: string;
 }
 
 interface DeeplParameters extends Partial<DeeplOptionalParameters> {
