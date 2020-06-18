@@ -9,7 +9,11 @@
   ],
   "scripts": {
     "build": "tsc",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build",
+    "pat": "npm version patch",
+    "min": "npm version minor",
+    "maj": "npm version major",
+    "pub": "npm publish"
   },
   "devDependencies": {
     "typescript": "^3.9.5"
