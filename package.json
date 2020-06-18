@@ -1,14 +1,28 @@
 {
   "name": "deepl-api",
   "version": "1.0.0",
-  "main": "src/index.ts",
+  "main": "dist/index.js",
   "author": "su- <su-.dev@unitech.jp>",
   "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
   "devDependencies": {
     "typescript": "^3.9.5"
   },
   "dependencies": {
     "axios": "^0.19.2",
     "query-string": "^6.13.1"
-  }
+  },
+  "keywords": [
+    "deepl"
+  ],
+  "bugs": {
+    "url": "https://github.com/su-u/deepl-api/issues"
+  },
+  "homepage": "https://github.com/TsutomuNakamura/rpncc#readme"
 }
