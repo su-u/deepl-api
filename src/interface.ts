@@ -22,7 +22,7 @@ export interface DeeplParameters extends Partial<DeeplOptionalParameters> {
 }
 
 interface TextParameter {
-  detected_source_language: TargetLanguage;
+  detected_source_language: SourceLanguage;
   text: string;
 }
 
