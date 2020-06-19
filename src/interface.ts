@@ -1,4 +1,4 @@
-import { Language } from './language';
+import { SourceLanguage, TargetLanguage } from './language';
 
 interface DeeplXmlParameters {
   tag_handling: 'xml';
@@ -9,7 +9,7 @@ interface DeeplXmlParameters {
 }
 
 interface DeeplOptionalParameters extends DeeplXmlParameters {
-  source_lang: Language;
+  source_lang: SourceLanguage;
   split_sentences: '0' | '1' | 'nonewlines';
   preserve_formatting: '0' | '1';
   formality: 'default' | 'more' | 'less';
@@ -17,12 +17,12 @@ interface DeeplOptionalParameters extends DeeplXmlParameters {
 
 export interface DeeplParameters extends Partial<DeeplOptionalParameters> {
   text: string | string[];
-  target_lang: Language;
+  target_lang: TargetLanguage;
   auth_key: string;
 }
 
 interface TextParameter {
-  detected_source_language:Language;
+  detected_source_language: TargetLanguage;
   text: string;
 }
 
