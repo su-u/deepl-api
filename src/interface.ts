@@ -1,6 +1,6 @@
 import { SourceLanguage, TargetLanguage } from './language';
 
-interface DeeplXmlParameters {
+interface DeeplApiXmlParameters {
   tag_handling: 'xml';
   non_splitting_tags: string;
   outline_detection: string;
@@ -8,14 +8,14 @@ interface DeeplXmlParameters {
   ignore_tags: string;
 }
 
-interface DeeplOptionalParameters extends DeeplXmlParameters {
+interface DeeplApiOptionalParameters extends DeeplApiXmlParameters {
   source_lang: SourceLanguage;
   split_sentences: '0' | '1' | 'nonewlines';
   preserve_formatting: '0' | '1';
   formality: 'default' | 'more' | 'less';
 }
 
-export interface DeeplParameters extends Partial<DeeplOptionalParameters> {
+export interface DeeplApiParameters extends Partial<DeeplApiOptionalParameters> {
   text: string | string[];
   target_lang: TargetLanguage;
   auth_key: string;
