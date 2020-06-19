@@ -1,6 +1,6 @@
 import { SourceLanguage, TargetLanguage } from './language';
 
-interface DeeplApiXmlParameters {
+interface DeeplApiExtensionParameters {
   tag_handling: 'xml';
   non_splitting_tags: string;
   outline_detection: string;
@@ -8,7 +8,7 @@ interface DeeplApiXmlParameters {
   ignore_tags: string;
 }
 
-interface DeeplApiOptionalParameters extends DeeplApiXmlParameters {
+interface DeeplApiOptionalParameters extends DeeplApiExtensionParameters {
   source_lang: SourceLanguage;
   split_sentences: '0' | '1' | 'nonewlines';
   preserve_formatting: '0' | '1';
