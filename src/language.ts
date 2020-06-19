@@ -16,29 +16,31 @@ export const LANGUAGES = {
 
 type Language = typeof LANGUAGES[keyof typeof LANGUAGES];
 export type SourceLanguage =
-  | typeof LANGUAGES.DE
-  | typeof LANGUAGES.EN
-  | typeof LANGUAGES.FR
-  | typeof LANGUAGES.IT
-  | typeof LANGUAGES.JA
-  | typeof LANGUAGES.ES
-  | typeof LANGUAGES.NL
-  | typeof LANGUAGES.PL
-  | typeof LANGUAGES.PT
-  | typeof LANGUAGES.RU
-  | typeof LANGUAGES.ZH;
+  Extract<Language,
+    | typeof LANGUAGES.DE
+    | typeof LANGUAGES.EN
+    | typeof LANGUAGES.FR
+    | typeof LANGUAGES.IT
+    | typeof LANGUAGES.JA
+    | typeof LANGUAGES.ES
+    | typeof LANGUAGES.NL
+    | typeof LANGUAGES.PL
+    | typeof LANGUAGES.PT
+    | typeof LANGUAGES.RU
+    | typeof LANGUAGES.ZH>
 
 export type TargetLanguage =
-  | typeof LANGUAGES.DE
-  | typeof LANGUAGES.EN
-  | typeof LANGUAGES.FR
-  | typeof LANGUAGES.IT
-  | typeof LANGUAGES.JA
-  | typeof LANGUAGES.ES
-  | typeof LANGUAGES.NL
-  | typeof LANGUAGES.PL
-  | typeof LANGUAGES.PT_PT
-  | typeof LANGUAGES.PT_BR
-  | typeof LANGUAGES.PT
-  | typeof LANGUAGES.RU
-  | typeof LANGUAGES.ZH;
+  Extract<Language,
+    | typeof LANGUAGES.DE
+    | typeof LANGUAGES.EN
+    | typeof LANGUAGES.FR
+    | typeof LANGUAGES.IT
+    | typeof LANGUAGES.JA
+    | typeof LANGUAGES.ES
+    | typeof LANGUAGES.NL
+    | typeof LANGUAGES.PL
+    | typeof LANGUAGES.PT_PT
+    | typeof LANGUAGES.PT_BR
+    | typeof LANGUAGES.PT
+    | typeof LANGUAGES.RU
+    | typeof LANGUAGES.ZH>
