@@ -16,18 +16,27 @@ yarn add deepl-api
 ```typescript
 import { translate } from 'deepl-api';
 
-translate({
+const response = await translate({
   text: 'Hello',
   target_lang: 'JA',
   auth_key: 'authkey',
 })
-  .then(response => {
-      console.log(response.data);
-  })
-  .catch(error => {
-      console.error(error)
-  });
+
+console.log(response.data);
 ```
+
+response.data
+```
+{
+  "translations": [
+    {
+      "detected_source_language": "EN",
+      "text": "こんにちは"
+    }
+  ]
+}
+```
+
 
 ## see
 - [DeepL API](https://www.deepl.com/docs-api/accessing-the-api/)
